@@ -1,0 +1,210 @@
+/*
+Theme Name: migueltavares
+Text Domain: migueltavares
+Version: 1.0
+Author: Joana Cardoso
+*/
+
+body {
+  background-color: #e8e8e8;
+  color: #0000ff;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  cursor: -moz-crosshair;
+  cursor: -webkit-crosshair;
+  cursor: crosshair;
+}
+
+a:hover {
+  cursor: -moz-crosshair;
+  cursor: -webkit-crosshair;
+  cursor: crosshair;
+}
+
+a.site-title {
+  font-size: 32px;
+  color: #0000ff;
+  font-weight: 600;
+}
+
+a.site-title:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: #e8e8e8;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #0000ff;
+  z-index: 2;
+}
+
+.labels {
+  position: absolute;
+  min-width: 200px;
+  padding-top: 5px;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  border-right: 1px solid #0000ff;
+  background-color: #e8e8e8;
+  z-index: 1;
+}
+
+.news {
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  -webkit-animation: loop 40s infinite linear;
+  animation: loop 40s infinite linear;
+  z-index: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 80px;
+  padding-top: 6px;
+  height: 40px;
+}
+
+@keyframes loop {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.list-menu {
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  top: 35px;
+  right: 20px;
+  z-index: 3;
+  text-align: right;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding-right: 15px;
+}
+
+ul.list-menu a,
+.labels a {
+  color: #0000ff;
+  transition: all 0.3s ease-out;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+ul.list-menu a:hover,
+.labels a:hover {
+  color: #e8e8e8;
+  text-decoration: none;
+  text-shadow: 5px 10px 10px #0000ff, 0px 0px 10px#0000ff, 5px 10px 10px #0000ff,
+    0px 0px 10px #0000ff;
+}
+
+.wrapper {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+div.left {
+  position: absolute;
+  min-width: 200px;
+  top: 120px;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  border-right: 1px solid #0000ff;
+  border-top: 1px solid #0000ff;
+}
+
+div.right {
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  overflow-y: scroll;
+  border-top: 1px solid #0000ff;
+}
+
+div.right img {
+  width: 100%;
+}
+
+ul.items {
+  list-style: none;
+  padding: 0 20px 0 0px;
+  line-height: 75px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+ul.items > li a {
+  text-decoration: none;
+
+  color: #e8e8e8;
+  text-shadow: 5px 5px 5px #0000ff, 1px 2px 2px#0000ff, 1px -1px 0 #0000ff,
+    -1px -1px 0 #0000ff;
+  transition: all 0.5s ease-out;
+}
+
+ul.items > li a:hover {
+  text-shadow: 5px 10px 10px #0000ff, 1px 2px 2px#0000ff, 5px 10px 10px #0000ff,
+    5px 20px 20px #0000ff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main-info {
+  padding: 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.screenings {
+  float: right;
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+.ficha-tecnica {
+  float: left;
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+.tag {
+  margin-left: 15px;
+}
+
+p.trailer {
+  font-size: 10px;
+}
+
+.right ul {
+  list-style: none;
+  padding: 0;
+}
